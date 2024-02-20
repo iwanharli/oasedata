@@ -295,7 +295,7 @@
                 </div>
                 <div class="slider-3items slider-style-6">
                     <div class="swiper-container pb-70">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper" style="height: 500px !important;">
                             <div class="swiper-slide">
                                 <div class="project-card style-6">
                                     <div class="img">
