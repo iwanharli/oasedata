@@ -1,0 +1,1220 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="HTML5 Template OaseData Multi-Purpose themeforest" />
+    <meta name="description" content="OaseData - Multi-Purpose HTML5 Template" />
+    <meta name="author" content="" />
+
+    <!-- Title  -->
+    <title>OASEDATA</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/fav.png" title="Favicon" sizes="16x16" />
+
+    <!-- ====== bootstrap icons cdn ====== -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+
+    <!-- ====== font family ====== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&ampdisplay=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/lib/all.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/animate.css" />
+    <link rel="stylesheet" href="assets/css/lib/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/css/lib/lity.css" />
+    <link rel="stylesheet" href="assets/css/lib/swiper.min.css" />
+
+    <!-- ====== global style ====== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+    <style>
+        .sticky-icon {
+            z-index: 20;
+            position: fixed;
+            top: 25%;
+            right: 0%;
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sticky-icon a {
+            transform: translate(160px, 0px);
+            border-radius: 50px 0px 0px 50px;
+            text-align: left;
+            margin: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px;
+            font-size: 22px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            transition: all 0.8s;
+        }
+
+        .sticky-icon a:hover {
+            color: #FFF;
+            transform: translate(0px, 0px);
+        }
+
+        .sticky-icon a:hover i {
+            transform: rotate(360deg);
+        }
+
+        /*.search_icon a:hover i  {
+	transform:rotate(360deg);}*/
+        .Facebook {
+            background-color: #2C80D3;
+            color: #FFF;
+        }
+
+        .Youtube {
+            background-color: #fa0910;
+            color: #FFF;
+        }
+
+        .Twitter {
+            background-color: #53c5ff;
+            color: #FFF;
+        }
+
+        .Instagram {
+            background-color: #b74bff;
+            color: #FFF;
+        }
+
+        .Tiktok {
+            background-color: #000000;
+            color: #FFF;
+        }
+
+        .sticky-icon a i {
+            background-color: #FFF;
+            height: 40px;
+            width: 40px;
+            color: #000;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-right: 20px;
+            transition: all 0.5s;
+        }
+
+        .sticky-icon a:hover {
+            background-color: #805aff;
+        }
+
+        .sticky-icon a i.fa-facebook-f {
+            background-color: #FFF;
+            color: #2C80D3;
+        }
+
+        .sticky-icon a i.fa-tiktok {
+            background-color: #FFF;
+            color: #000000;
+        }
+
+        .sticky-icon a i.fa-instagram {
+            background-color: #FFF;
+            color: #c249ff;
+        }
+
+        .sticky-icon a i.fa-youtube {
+            background-color: #FFF;
+            color: #fa0910;
+        }
+
+        .sticky-icon a i.fa-twitter {
+            background-color: #FFF;
+            color: #53c5ff;
+        }
+
+        .fas fa-shopping-cart {
+            background-color: #FFF;
+        }
+
+        #myBtn {
+            height: 50px;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            text-align: center;
+            padding: 10px;
+            text-align: center;
+            line-height: 40px;
+            border: none;
+            outline: none;
+            background-color: #1e88e5;
+            color: white;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .fa-arrow-circle-up {
+            font-size: 30px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+
+        .nav-item .komparasi:hover{
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body class="home-onePage">
+
+    <!-- ====== start loading page ====== -->
+    <!-- <div id="preloader">
+    </div> -->
+    <!-- ---------- loader ---------- -->
+    <div id="preloader">
+        <div id="loading-wrapper" class="show">
+            <div id="loading-text"> <img src="assets/img/logo_oasedata_loading.png" alt=""> </div>
+            <div id="loading-content"></div>
+        </div>
+    </div>
+    <!-- ====== end loading page ====== -->
+
+    <!-- ====== start top navbar ====== -->
+    <div class="top-navbar style-4">
+        <div class="container">
+            <div class="content text-white">
+                <span class="btn sm-butn bg-white py-0 px-2 me-2 fs-10px">
+                    <small class="fs-10px">Special</small>
+                </span>
+                <img src="assets/img/icons/nav_icon/imoj_heart.png" alt="" class="icon-15">
+                <span class="fs-10px op-6">Dapatkan </span>
+                <small class="op-10 fs-10px">20% Diskon - </small>
+                <a href="#" class="fs-10px text-decoration-underline ms-2"
+                    style="text-decoration: none !important; color: white !important;">Daftar Sekarang</a>
+            </div>
+        </div>
+    </div>
+    <!-- ====== end top navbar ====== -->
+
+    <!-- ====== start navbar ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav" style="padding: 18px 15px !important;">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-scroll-nav="0">
+                <img src="assets/img/logo_oasedata_dark2.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item" style="border-right: 1px solid rgba(103, 103, 103, 0.322); ">
+                        <a class="nav-link" href="page-404.html">
+                            Profil 
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#home" data-scroll-nav="0">
+                            Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#0" data-scroll-nav="1">
+                            Berita
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#0" data-scroll-nav="2">
+                            Statistik
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#0" data-scroll-nav="3">
+                            Layanan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#0" data-scroll-nav="4">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="nav-item komparasi" style="border-radius: 15px 0px 0px 15px; background: linear-gradient(90deg, rgb(155 151 255) 0%, rgba(45,183,255,0) 100%);">
+                        <a class="nav-link" href="komparasi.html">
+                            Komparasi
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-side">
+                    <a href="#0" class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold">
+                        <small> Login <i class="fal fa-sign-in ms-1"></i></small>
+                    </a> &nbsp;
+                    <a href="#0" class="btn rounded-pill text-white bg-blue4 sm-butn fw-bold">
+                        <small> Trial <i class="fal fa-long-arrow-right ms-1"></i></small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ====== end navbar ====== -->
+
+    <!-- ====== start header ====== -->
+    <header class="style-4" data-scroll-index="0" style="background-color: #cbd2ff;">
+        <div class="content">
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <div class="info">
+                            <small class="mb-50 title_small">OASEDATA</small>
+                            <h1 class="mb-30">Get <span> Your Data </span> </br> Into Survey Report </h1>
+                            <p class="text">Oasedata bring the power of data science and artificial </br>
+                                intelligence to every business.</p>
+                            <div class="d-flex align-items-center mt-50">
+                                <a href="#" class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+                                    <small> <i class="fa fa-user me-2 pe-2 border-end"></i> Daftar Sekarang </small>
+                                </a>
+                                <a href="https://youtu.be/pGbIOC83-So?t=21" data-lity class="play-btn">
+                                    <span class="icon me-2">
+                                        <i class="fas fa-play ms-1"></i>
+                                    </span>
+                                    <strong class="small">Lihat <br> Promosi</strong>
+                                </a>
+                            </div>
+                            <span class="mt-100 me-5">
+                                <small
+                                    class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1">
+                                    <i class="fas fa-sync"></i>
+                                </small>
+                                <small class="text-uppercase">Gratis Uji Coba</small>
+                            </span>
+                            <span class="mt-100">
+                                <small
+                                    class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1">
+                                    <i class="fas fa-credit-card"></i>
+                                </small>
+                                <small class="text-uppercase">One time payment</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img">
+                            <img src="assets/img/header/3d_vector_head8.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/header/header_4_bubble.png" alt="" class="bubble">
+        </div>
+        <img src="assets/img/header/header_4_wave.png" alt="" class="wave">
+    </header>
+    <!-- ====== end header ====== -->
+
+    <!--Contents-->
+    <main>
+        <div class="sticky-icon">
+            <a href="#" class="Instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#" class="Facebook" target="_blank"><i class="fab fa-facebook-f"> </i> Facebook </a>
+            <a href="#" class="Tiktok" target="_blank"><i class="fab fa-tiktok"></i> Tiktok </a>
+            <a href="#" class="Twitter" target="_blank"><i class="fab fa-twitter"> </i> Twitter </a>
+            <a href="#" class="Youtube" target="_blank"><i class="fab fa-youtube"></i> Youtube </a>
+        </div>
+
+        <!-- ====== berita ====== -->
+        <section class="blog section-padding style-6" data-scroll-index="1">
+            <div class="container">
+                <div class="section-head mb-40 d-flex justify-content-between align-items-center style-6">
+                    <h2 class="mb-20">
+                        <span> <small>Berita</small> </span>
+                        terbaru
+                    </h2>
+                    <p class="color-666">Dapatkan artikel terbaru dari pers kami, diskusikan, dan bagikan.</p>
+                    <a href="berita.html" class="btn btn-icon-circle rounded-pill bg-blue7 fw-bold text-white">
+                        <small> Lihat semua berita <i class="fas fa-long-arrow-alt-right"></i> </small>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="blog-card style-6">
+                        <a href="page-single-post-5.html" class="img img-cover d-block">
+                            <img src="assets/img/blog/9.png" alt="">
+                        </a>
+                        <div class="info">
+                            <div class="date">
+                                <a href="#"
+                                    class="small color-blue6 fs-12px pe-3 border-end brd-gray text-uppercase fw-bold me-3">
+                                    news </a>
+                                <small class="op-6 fs-12px"> <i class="far fa-clock"></i> Posted on </small>
+                                <a href="#" class="fs-12px">3 Days ago</a>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="page-single-post-5.html">Workflow Strategy for E-shop</a>
+                            </h4>
+                            <div class="text">
+                                If there’s one way that wireless technology has changed the way we work, it’s that will
+                                everyone is now connected [...]
+                            </div>
+                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
+                                <div class="l_side d-flex align-items-center">
+                                    <span
+                                        class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
+                                        a
+                                    </span>
+                                    <a href="#">
+                                        <small class="text-muted">By</small> David
+                                    </a>
+                                </div>
+                                <div class="r-side mt-1">
+                                    <i class="bi bi-chat-left-text me-1"></i>
+                                    <a href="#">24</a>
+                                    <i class="bi bi-eye ms-4 me-1"></i>
+                                    <a href="#">774k</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card card-center style-6">
+                        <a href="page-single-post-5.html" class="img img-cover d-block">
+                            <img src="assets/img/blog/10.png" alt="">
+                        </a>
+                        <div class="info">
+                            <div class="date">
+                                <a href="#"
+                                    class="small color-blue6 fs-12px pe-3 border-end brd-gray text-uppercase fw-bold me-3">
+                                    news </a>
+                                <small class="op-6 fs-12px"> <i class="far fa-clock"></i> Posted on </small>
+                                <a href="#" class="fs-12px">12 Days ago</a>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="page-single-post-5.html">6 Tips To Help You Build Your Social Media
+                                    Effeciency</a>
+                            </h4>
+                            <div class="text">
+                                If there’s one way that wireless technology has changed the way we work, it’s that will
+                                everyone is now connected [...]
+                            </div>
+                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
+                                <div class="l_side d-flex align-items-center">
+                                    <span
+                                        class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
+                                        a
+                                    </span>
+                                    <a href="#">
+                                        <small class="text-muted">By</small> David
+                                    </a>
+                                </div>
+                                <div class="r-side mt-1">
+                                    <i class="bi bi-chat-left-text me-1"></i>
+                                    <a href="#">24</a>
+                                    <i class="bi bi-eye ms-4 me-1"></i>
+                                    <a href="#">774k</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card style-6">
+                        <a href="page-single-post-5.html" class="img img-cover d-block">
+                            <img src="assets/img/blog/11.png" alt="">
+                        </a>
+                        <div class="info">
+                            <div class="date">
+                                <a href="#"
+                                    class="small color-blue6 fs-12px pe-3 border-end brd-gray text-uppercase fw-bold me-3">
+                                    news </a>
+                                <small class="op-6 fs-12px"> <i class="far fa-clock"></i> Posted on </small>
+                                <a href="#" class="fs-12px">12 Days ago</a>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="page-single-post-5.html">The Trend of Marketing With Tiktok, Should or not?</a>
+                            </h4>
+                            <div class="text">
+                                If there’s one way that wireless technology has changed the way we work, it’s that will
+                                everyone is now connected [...]
+                            </div>
+                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
+                                <div class="l_side d-flex align-items-center">
+                                    <span
+                                        class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
+                                        a
+                                    </span>
+                                    <a href="#">
+                                        <small class="text-muted">By</small> David
+                                    </a>
+                                </div>
+                                <div class="r-side mt-1">
+                                    <i class="bi bi-chat-left-text me-1"></i>
+                                    <a href="#">24</a>
+                                    <i class="bi bi-eye ms-4 me-1"></i>
+                                    <a href="#">774k</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="blog-card style-6">
+                        <a href="page-single-post-5.html" class="img img-cover d-block">
+                            <img src="assets/img/blog/9.png" alt="">
+                        </a>
+                        <div class="info">
+                            <div class="date">
+                                <a href="#"
+                                    class="small color-blue6 fs-12px pe-3 border-end brd-gray text-uppercase fw-bold me-3">
+                                    news </a>
+                                <small class="op-6 fs-12px"> <i class="far fa-clock"></i> Posted on </small>
+                                <a href="#" class="fs-12px">3 Days ago</a>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="page-single-post-5.html">Workflow Strategy for E-shop</a>
+                            </h4>
+                            <div class="text">
+                                If there’s one way that wireless technology has changed the way we work, it’s that will
+                                everyone is now connected [...]
+                            </div>
+                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
+                                <div class="l_side d-flex align-items-center">
+                                    <span
+                                        class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
+                                        a
+                                    </span>
+                                    <a href="#">
+                                        <small class="text-muted">By</small> David
+                                    </a>
+                                </div>
+                                <div class="r-side mt-1">
+                                    <i class="bi bi-chat-left-text me-1"></i>
+                                    <a href="#">24</a>
+                                    <i class="bi bi-eye ms-4 me-1"></i>
+                                    <a href="#">774k</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card card-center style-6">
+                        <a href="page-single-post-5.html" class="img img-cover d-block">
+                            <img src="assets/img/blog/10.png" alt="">
+                        </a>
+                        <div class="info">
+                            <div class="date">
+                                <a href="#"
+                                    class="small color-blue6 fs-12px pe-3 border-end brd-gray text-uppercase fw-bold me-3">
+                                    news </a>
+                                <small class="op-6 fs-12px"> <i class="far fa-clock"></i> Posted on </small>
+                                <a href="#" class="fs-12px">12 Days ago</a>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="page-single-post-5.html">6 Tips To Help You Build Your Social Media
+                                    Effeciency</a>
+                            </h4>
+                            <div class="text">
+                                If there’s one way that wireless technology has changed the way we work, it’s that will
+                                everyone is now connected [...]
+                            </div>
+                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
+                                <div class="l_side d-flex align-items-center">
+                                    <span
+                                        class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
+                                        a
+                                    </span>
+                                    <a href="#">
+                                        <small class="text-muted">By</small> David
+                                    </a>
+                                </div>
+                                <div class="r-side mt-1">
+                                    <i class="bi bi-chat-left-text me-1"></i>
+                                    <a href="#">24</a>
+                                    <i class="bi bi-eye ms-4 me-1"></i>
+                                    <a href="#">774k</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card style-6">
+                        <a href="page-single-post-5.html" class="img img-cover d-block">
+                            <img src="assets/img/blog/11.png" alt="">
+                        </a>
+                        <div class="info">
+                            <div class="date">
+                                <a href="#"
+                                    class="small color-blue6 fs-12px pe-3 border-end brd-gray text-uppercase fw-bold me-3">
+                                    news </a>
+                                <small class="op-6 fs-12px"> <i class="far fa-clock"></i> Posted on </small>
+                                <a href="#" class="fs-12px">12 Days ago</a>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="page-single-post-5.html">The Trend of Marketing With Tiktok, Should or not?</a>
+                            </h4>
+                            <div class="text">
+                                If there’s one way that wireless technology has changed the way we work, it’s that will
+                                everyone is now connected [...]
+                            </div>
+                            <div class="d-flex small mt-20 align-items-center justify-content-between op-9">
+                                <div class="l_side d-flex align-items-center">
+                                    <span
+                                        class="icon-10 rounded-circle d-inline-flex justify-content-center align-items-center text-uppercase bg-blue2 p-2 me-2  text-white">
+                                        a
+                                    </span>
+                                    <a href="#">
+                                        <small class="text-muted">By</small> David
+                                    </a>
+                                </div>
+                                <div class="r-side mt-1">
+                                    <i class="bi bi-chat-left-text me-1"></i>
+                                    <a href="#">24</a>
+                                    <i class="bi bi-eye ms-4 me-1"></i>
+                                    <a href="#">774k</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== end berita ====== -->
+
+        <!-- ====== start about ====== -->
+        <section class="about style-8 section-padding" style="background-color: #d8d1ff !important;">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="img mb-4 mb-lg-0 wow fadeIn">
+                            <img src="assets/img/about/3d_vector2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="info">
+                            <div class="section-head style-8 mb-40">
+                                <!-- <h6 class="wow fadeInUp"> about our service </h6> -->
+                                <h3 class="wow fadeInUp"> We offer Real-time <br> Data Solutions. </h3>
+                            </div>
+                            <p class="color-666 wow fadeInUp"> Stay focused and productive with a clean and clutter-free
+                                note space the flexible ways to organize </p>
+                            <ul class="mt-30">
+                                <li class="wow fadeInUp">
+                                    <img src="assets/img/about/icon3.svg" alt="" class="icon">
+                                    <p> Various AI Data Analysis Options </p>
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <img src="assets/img/about/icon3.svg" alt="" class="icon">
+                                    <p> Auto Generate AI Content </p>
+                                </li>
+                            </ul>
+                            <!-- <div class="d-flex align-items-center mt-40 wow fadeInUp">
+                                <div class="author">
+                                    <div
+                                        class="img icon-60 rounded-circle overflow-hidden img-cover me-3 flex-shrink-0">
+                                        <img src="assets/img/testimonials/user7.png" alt="">
+                                    </div>
+                                    <div class="inf">
+                                        <p> Certified By </p>
+                                        <h6> Alonso D.Dowson </h6>
+                                    </div>
+                                </div>
+                                <img src="assets/img/about/signature.svg" alt="" class="signature ms-5">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== end about ====== -->
+
+        <!-- ====== statistik ====== -->
+        <section class="section-padding bg-gray2" data-scroll-index="2">
+            <div class="container">
+                <div class="section-head mb-40 d-flex justify-content-between align-items-center style-6">
+                    <h2 class="mb-20">
+                        <span> <small>Statistik</small> </span>
+                        terbaru
+                    </h2>
+                    <a href="statistik.html" class="btn btn-icon-circle rounded-pill bg-blue7 fw-bold text-white">
+                        <small> Lihat semua statistik <i class="fas fa-long-arrow-alt-right"></i> </small>
+                    </a>
+                </div>
+                <div class="slider-3items slider-style-6">
+                    <div class="swiper-container pb-70">
+                        <div class="swiper-wrapper" style="height: 500px !important;">
+                            <div class="swiper-slide">
+                                <div class="project-card style-6">
+                                    <div class="img">
+                                        <img src="assets/img/projects/4.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="title">
+                                            <a href="page-single-project-5.html">Okpay E-Wallet Optimized</a>
+                                        </h3>
+                                        <small class="color-blue6">
+                                            <a href="#">SEO analysis</a>
+                                        </small>
+                                        <div class="text">
+                                            Trust our top minds to eliminate workflow pain points, implement new
+                                            tech & app.
+                                        </div>
+                                        <div class="tags">
+                                            <span>
+                                                <a href="#">SEO Analysis</a>
+                                            </span>
+                                            <span>
+                                                <a href="#">Content Strategy</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card style-6">
+                                    <div class="img">
+                                        <img src="assets/img/projects/5.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="title">
+                                            <a href="page-single-project-5.html">e-Commerce Dashboard</a>
+                                        </h3>
+                                        <small class="color-blue6"> <a href="#">website design</a> & <a
+                                                href="#">develoment</a> </small>
+                                        <div class="text">
+                                            Trust our top minds to eliminate workflow pain points, implement new
+                                            tech & app.
+                                        </div>
+                                        <div class="tags">
+                                            <span><a href="#">WordPress</a></span>
+                                            <span><a href="#">PHP</a></span>
+                                            <span><a href="#">HTML/CSS</a></span>
+                                            <span><a href="#">Figma</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card style-6">
+                                    <div class="img">
+                                        <img src="assets/img/projects/7.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="title"><a href="page-single-project-5.html">MLB Store
+                                                Instagram</a></h3>
+                                        <small class="color-blue6"><a href="#">social media</a></small>
+                                        <div class="text">
+                                            Trust our top minds to eliminate workflow pain points, implement new
+                                            tech & app.
+                                        </div>
+                                        <div class="tags">
+                                            <span><a href="#">Social</a></span>
+                                            <span><a href="#">Instagram</a></span>
+                                            <span><a href="#">Followers</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-card style-6">
+                                    <div class="img">
+                                        <img src="assets/img/projects/5.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="title"><a href="page-single-project-5.html">e-Commerce
+                                                Dashboard</a></h3>
+                                        <small class="color-blue6"><a href="#">website design</a> & <a
+                                                href="#">develoment</a></small>
+                                        <div class="text">
+                                            Trust our top minds to eliminate workflow pain points, implement new
+                                            tech & app.
+                                        </div>
+                                        <div class="tags">
+                                            <span><a href="#">WordPress</a></span>
+                                            <span><a href="#">PHP</a></span>
+                                            <span><a href="#">HTML/CSS</a></span>
+                                            <span><a href="#">Figma</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ====== pagination ====== -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- ====== arrows ====== -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== end statistik ====== -->
+
+        <!-- ====== start about ====== -->
+        <section class="about section-padding style-4">
+
+            <div class="integration pt-60" data-scroll-index="3">
+                <div class="section-head text-center style-4">
+                    <small class="title_small">Social Media Monitoring</small>
+                    <h2 class="mb-20"><span> Aplikasi </span> Yang Terintegrasi</h2>
+                    <p>OaseData intergrate with popular apps. Help you easy to connect and collaboration</p>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <div class="img">
+                            <img src="assets/img/icon/x2.png" alt="" class="mt-30">
+                        </div>
+                        <div class="img">
+                            <img src="assets/img/icon/facebook.png" alt="" class="mt-60">
+                        </div>
+                        <div class="img">
+                            <img src="assets/img/icon/google-news.png" alt="" class="mt-20">
+                        </div>
+                        <div class="img">
+                            <img src="assets/img/icon/tiktok.png" alt="" class="mt-80">
+                        </div>
+                        <div class="img">
+                            <img src="assets/img/icon/ig.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/about/intg_back.png" alt="" class="intg-back">
+            </div>
+            <img src="assets/img/about/about_s4_wave.png" alt="" class="top-wave">
+            <img src="assets/img/wave/wave_ungu.png" alt="" class="bottom-wave">
+        </section>
+        <!-- ====== end about ====== -->
+
+        <!-- ====== start layanan ====== -->
+        <section class="features section-padding style-5" data-scroll-index="3" style="background-color: #d8d1ff;">
+            <div style="margin-left: 100px; margin-right: 100px;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-head text-center mb-60 style-5">
+                            <h2 class="mb-20"> 
+                                <span class="sub-features" style="color:#b000ff;"> Layanan </span>
+                                Kami
+                            </h2>
+                            <p>OaseData Dashboard is a powerhouse when it comes to the feature list. This ensures you have
+                                every functionality you need to build, run, and expand your marketplace
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#" class="features-card mb-30 style-5">
+                                <div class="icon">
+                                    <img src="assets/img/icons/features/1.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5 class="card-title">
+                                        Data Visualization
+                                    </h5>
+                                    <p class="text">
+                                        Ideal for businesses that are seasonal or operate between fixed hours.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#" class="features-card mb-30 style-5">
+                                <div class="icon">
+                                    <img src="assets/img/icons/features/2.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5 class="card-title">
+                                        Data Collection
+                                    </h5>
+                                    <p class="text">
+                                        Set up irresistible deals and offers with flexible discount promo codes.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#" class="features-card mb-30 style-5">
+                                <div class="icon">
+                                    <img src="assets/img/icons/features/3.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5 class="card-title">
+                                        Sentiment Analysis
+                                    </h5>
+                                    <p class="text">
+                                        Import products from and export products to CSV from vendor dashboard.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#" class="features-card mb-30 style-5">
+                                <div class="icon">
+                                    <img src="assets/img/icons/features/4.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5 class="card-title">
+                                        Predictive Analysis
+                                    </h5>
+                                    <p class="text">
+                                        Interaction with sellers help buyers to make better purchase decisions.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#" class="features-card mb-30 mb-lg-0 style-5">
+                                <div class="icon">
+                                    <img src="assets/img/icons/features/5.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5 class="card-title">
+                                        Machine Learning
+                                    </h5>
+                                    <p class="text">
+                                        Offer membership plans for sellers, free and paid. Accept recurring fees.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#" class="features-card mb-30 mb-lg-0 style-5">
+                                <div class="icon">
+                                    <img src="assets/img/icons/features/6.png" alt="">
+                                </div>
+                                <div class="info">
+                                    <h5 class="card-title">
+                                        Security Analysis
+                                    </h5>
+                                    <p class="text">
+                                        Order fulfillment made easy with store invoices and shipping labels.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== end layanan ====== -->
+
+        <!-- ====== start faq ====== -->
+        <section class="faq section-padding style-4 pt-50" data-scroll-index="4">
+            <div class="container">
+                <div class="section-head text-center style-4">
+                    <small class="title_small">Frequently Asked Question</small>
+                    <h2 class="mb-30"> Need A <span> Support? </span> </h2>
+                </div>
+                <div class="content">
+                    <div class="faq style-3 style-4">
+                        <div class="accordion" id="accordionSt4">
+                            <div class="row gx-5">
+                                <div class="col-lg-6">
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading11">
+                                            <button class="accordion-button collapsed rounded-0 py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse11"
+                                                aria-expanded="true" aria-controls="collapse11">
+                                                How Benefit That I Got When Choose Basic Plan?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse11" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading11" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading12">
+                                            <button class="accordion-button py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse12"
+                                                aria-expanded="false" aria-controls="collapse12">
+                                                How Do I Organize My Notes?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse12" class="accordion-collapse collapse show rounded-0"
+                                            aria-labelledby="heading12" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading13">
+                                            <button class="accordion-button collapsed py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse13"
+                                                aria-expanded="false" aria-controls="collapse13">
+                                                How Long For A Standard Project
+                                            </button>
+                                        </h2>
+                                        <div id="collapse13" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading13" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 rounded-0">
+                                        <h2 class="accordion-header" id="heading4">
+                                            <button class="accordion-button collapsed rounded-0 py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                                aria-expanded="true" aria-controls="collapse4">
+                                                How About Data Security & NDA Agreement
+                                            </button>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading4" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading5">
+                                            <button class="accordion-button collapsed rounded-0 py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                                aria-expanded="true" aria-controls="collapse5">
+                                                How Does OaseData Store My Data?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse5" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading5" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading6">
+                                            <button class="accordion-button collapsed py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                                aria-expanded="false" aria-controls="collapse6">
+                                                Does OaseData Support Storing Data on iCloud?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse6" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading6" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading7">
+                                            <button class="accordion-button collapsed py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse7"
+                                                aria-expanded="false" aria-controls="collapse7">
+                                                How Do I Change My Email or Password?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse7" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading7" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-bottom rounded-0">
+                                        <h2 class="accordion-header" id="heading8">
+                                            <button class="accordion-button collapsed rounded-0 py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse8"
+                                                aria-expanded="true" aria-controls="collapse8">
+                                                Can My Premium License Be Used For All Devices?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse8" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading8" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 rounded-0">
+                                        <h2 class="accordion-header" id="heading9">
+                                            <button class="accordion-button collapsed rounded-0 py-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse9"
+                                                aria-expanded="true" aria-controls="collapse9">
+                                                Can I Lock My Note App?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse9" class="accordion-collapse collapse rounded-0"
+                                            aria-labelledby="heading9" data-bs-parent="#accordionSt4">
+                                            <div class="accordion-body">
+                                                Through the collaboration with customers in discussing needs and demand,
+                                                we're able to attain <br> mutual understanding, gain customer trust to
+                                                offer appropriate advice
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== end faq ====== -->
+
+        <!-- ====== start community ====== -->
+        <section class="community section-padding pt-0 style-4">
+            <div class="container">
+                <div class="section-head text-center style-4">
+                    <small class="title_small">OaseData Community</small>
+                    <h2 class="mb-30"> Join Into <span> Our Hub </span> </h2>
+                </div>
+                <div class="content">
+                    <a href="#" class="commun-card">
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="inf">
+                            <h5>Instagram</h5>
+                            <p>Open Source & Commnit Code</p>
+                        </div>
+                    </a>
+                    <a href="#" class="commun-card">
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="inf">
+                            <h5>Twitter</h5>
+                            <p>Latest News & Update</p>
+                        </div>
+                    </a>
+                    <a href="#" class="commun-card">
+                        <div class="icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="inf">
+                            <h5>Tiktok</h5>
+                            <p>Chanel for Community</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ====== end community ====== -->
+    </main>
+    <!--End-Contents-->
+
+    <!-- ====== start footer ====== -->
+    <footer class="style-4" data-scroll-index="8">
+        <div class="container">
+            <div class="section-head text-center style-4">
+                <h2 class="mb-10"> Ready To <span> Get Your Analytics </span> </h2>
+                <p>Discover your new favorite spaces, from Sao Paulo to Seoul. Download from App Store or Google Play.
+                </p>
+            </div>
+            <div class="foot mt-80">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <img src="assets/img/logo_oasedata_dark2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="links">
+                            <li>
+                                <a href="home-app-landing.html" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="page-about-5.html">about</a>
+                            </li>
+                            <li>
+                                <a href="page-product-5.html">product</a>
+                            </li>
+                            <li>
+                                <a href="page-portfolio-5.html">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="page-services-5.html">services</a>
+                            </li>
+                            <li>
+                                <a href="page-shop-5.html">shop</a>
+                            </li>
+                            <li>
+                                <a href="page-blog-5.html">blog</a>
+                            </li>
+                            <li>
+                                <a href="page-contact-5.html">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="dropdown">
+                            <button class="icon-25 dropdown-toggle p-0 border-0 bg-transparent rounded-circle img-cover"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/lang.png" alt="" class="me-2">
+                                <small>Indonesia</small>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite text-center">
+                <small class="small">
+                    © 2023 Copyrights by <a href="#" class="fw-bold text-decoration-underline">OaseData</a> All Rights
+                    Reserved. Designed by <a href="https://themeforest.net/user/themescamp"
+                        class="fw-bold text-decoration-underline">Harlitech</a>
+                </small>
+            </div>
+        </div>
+        <img src="assets/img/footer/footer_4_wave.png" alt="" class="wave">
+    </footer>
+    <!-- ====== end footer ====== -->
+
+    <!-- ====== start to top button ====== -->
+    <a href="#" class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center">
+        <i class="fa fa-arrow-circle-up text-dark"></i>
+    </a>
+    <!-- ====== end to top button ====== -->
+
+    <!-- ====== request ====== -->
+    <script src="assets/js/lib/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lib/wow.min.js"></script>
+    <script src="assets/js/lib/jquery.fancybox.js"></script>
+    <script src="assets/js/lib/lity.js"></script>
+    <script src="assets/js/lib/swiper.min.js"></script>
+    <script src="assets/js/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/js/lib/jquery.counterup.js"></script>
+    <script src="assets/js/lib/scrollIt.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
