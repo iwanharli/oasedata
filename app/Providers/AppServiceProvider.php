@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use TCG\Voyager\Facades\Voyager;
+use App\FormFields\TagsFormField;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        Voyager::addFormField(TagsFormField::class);
     }
 
     /**
