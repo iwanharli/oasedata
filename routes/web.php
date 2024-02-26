@@ -29,6 +29,7 @@ Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
 // Route::post('/news-player', 'ApiController@postNews');
 
 Route::get('/statistic', [StatsController::class, 'index'])->name('statistic');
+Route::get('/statistic/{slug}', [StatsController::class, 'show'])->name('statistic.show');
 
 
 Route::get('/news-player', function () {
