@@ -58,12 +58,15 @@
 							<div class="pagination style-5 color-4 justify-content-center mt-60">
 								{{-- Prev Page --}}
 								@if($statistics->currentPage() > 1)
+									<a href="{{ $statistics->url(1) }}">
+										<span class="text"><i class="fas fa-chevron-left"></i> First </span>
+									</a>
 									<a href="{{ $statistics->previousPageUrl() }}">
-										<span class="text"><i class="fas fa-chevron-left"></i> prev </span>
+										<span class="text"><i class="fas fa-chevron-left"></i> Prev </span>
 									</a>
 								@endif
 
-								@for($i = 1; $i <= $statistics->lastPage(); $i++)
+								@for($i = $statistics->currentPage(); $i < $statistics->currentPage()+5; $i++)
 									<a href="{{ $statistics->url($i) }}" class="{{ ($statistics->currentPage() == $i) ? 'active' : '' }}">
 										<span>{{ $i }}</span>
 									</a>
@@ -72,7 +75,10 @@
 								{{-- Next Page --}}
 								@if($statistics->currentPage() < $statistics->lastPage())
 									<a href="{{ $statistics->nextPageUrl() }}">
-										<span class="text">next <i class="fas fa-chevron-right"></i> </span>
+										<span class="text">Next <i class="fas fa-chevron-right"></i> </span>
+									</a>
+									<a href="{{ $statistics->url($statistics->lastPage()) }}">
+										<span class="text">Last <i class="fas fa-chevron-right"></i> </span>
 									</a>
 								@endif
 							</div>

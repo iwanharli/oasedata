@@ -296,101 +296,35 @@
                 <div class="slider-3items slider-style-6">
                     <div class="swiper-container pb-70">
                         <div class="swiper-wrapper" style="height: 500px !important;">
+                            @foreach($statistics as $statistic)
                             <div class="swiper-slide">
                                 <div class="project-card style-6">
                                     <div class="img">
-                                        <img src="assets/img/projects/4.png" alt="">
+                                        <img src="{{ Voyager::image($statistic->image) }}" alt="">
                                     </div>
                                     <div class="info">
                                         <h3 class="title">
-                                            <a href="#">Okpay E-Wallet Optimized</a>
+                                            <a href="#">{{ $statistic->title }}</a>
                                         </h3>
-                                        <small class="color-blue6">
+                                        {{-- <small class="color-blue6">
                                             <a href="#">SEO analysis</a>
-                                        </small>
+                                        </small> --}}
                                         <div class="text">
-                                            Trust our top minds to eliminate workflow pain points, implement new
-                                            tech & app.
+                                            {{ Str::limit(strip_tags($statistic->body), 150) }}
                                         </div>
                                         <div class="tags">
-                                            <span>
-                                                <a href="#">SEO Analysis</a>
-                                            </span>
-                                            <span>
-                                                <a href="#">Content Strategy</a>
-                                            </span>
+                                            @if($statistic->tags)
+                                                @foreach(json_decode($statistic->tags) as $tag)
+                                                    <span>
+                                                        <a href="#">{{ $tag->value }}</a>
+                                                    </span>
+                                                @endforeach
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="project-card style-6">
-                                    <div class="img">
-                                        <img src="assets/img/projects/5.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h3 class="title">
-                                            <a href="#">e-Commerce Dashboard</a>
-                                        </h3>
-                                        <small class="color-blue6"> <a href="#">website design</a> & <a
-                                                href="#">develoment</a> </small>
-                                        <div class="text">
-                                            Trust our top minds to eliminate workflow pain points, implement new
-                                            tech & app.
-                                        </div>
-                                        <div class="tags">
-                                            <span><a href="#">WordPress</a></span>
-                                            <span><a href="#">PHP</a></span>
-                                            <span><a href="#">HTML/CSS</a></span>
-                                            <span><a href="#">Figma</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-card style-6">
-                                    <div class="img">
-                                        <img src="assets/img/projects/7.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h3 class="title"><a href="#">MLB Store
-                                                Instagram</a></h3>
-                                        <small class="color-blue6"><a href="#">social media</a></small>
-                                        <div class="text">
-                                            Trust our top minds to eliminate workflow pain points, implement new
-                                            tech & app.
-                                        </div>
-                                        <div class="tags">
-                                            <span><a href="#">Social</a></span>
-                                            <span><a href="#">Instagram</a></span>
-                                            <span><a href="#">Followers</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-card style-6">
-                                    <div class="img">
-                                        <img src="assets/img/projects/5.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h3 class="title"><a href="#">e-Commerce
-                                                Dashboard</a></h3>
-                                        <small class="color-blue6"><a href="#">website design</a> & <a
-                                                href="#">develoment</a></small>
-                                        <div class="text">
-                                            Trust our top minds to eliminate workflow pain points, implement new
-                                            tech & app.
-                                        </div>
-                                        <div class="tags">
-                                            <span><a href="#">WordPress</a></span>
-                                            <span><a href="#">PHP</a></span>
-                                            <span><a href="#">HTML/CSS</a></span>
-                                            <span><a href="#">Figma</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <!-- ====== pagination ====== -->

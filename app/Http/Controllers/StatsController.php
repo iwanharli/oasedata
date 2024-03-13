@@ -11,7 +11,7 @@ class StatsController extends Controller
 {
 	public function index()
 	{
-		$statistics = Statistic::paginate(5);
+		$statistics = Statistic::orderBy('created_at', 'desc')->paginate(5);
 		$randomStats = Statistic::inRandomOrder()->take(5)->get();
 
 		return view('_statistic.main_list', compact('statistics', 'randomStats'));

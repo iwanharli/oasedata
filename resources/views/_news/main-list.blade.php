@@ -523,17 +523,20 @@
 								</div>
 							</div>
 						@endforeach
-
+						
 						@if($all_news->lastPage() > 1)
 							<div class="pagination style-5 color-4 justify-content-center mt-60">
 								{{-- Prev Page --}}
 								@if($all_news->currentPage() > 1)
+									<a href="{{ $all_news->url(1) }}">
+										<span class="text"><i class="fas fa-chevron-left"></i> First </span>
+									</a>
 									<a href="{{ $all_news->previousPageUrl() }}">
-										<span class="text"><i class="fas fa-chevron-left"></i> prev </span>
+										<span class="text"><i class="fas fa-chevron-left"></i> Prev </span>
 									</a>
 								@endif
 
-								@for($i = 1; $i <= $all_news->lastPage(); $i++)
+								@for($i = $all_news->currentPage(); $i < $all_news->currentPage()+5; $i++)
 									<a href="{{ $all_news->url($i) }}" class="{{ ($all_news->currentPage() == $i) ? 'active' : '' }}">
 										<span>{{ $i }}</span>
 									</a>
@@ -542,7 +545,10 @@
 								{{-- Next Page --}}
 								@if($all_news->currentPage() < $all_news->lastPage())
 									<a href="{{ $all_news->nextPageUrl() }}">
-										<span class="text">next <i class="fas fa-chevron-right"></i> </span>
+										<span class="text">Next <i class="fas fa-chevron-right"></i> </span>
+									</a>
+									<a href="{{ $all_news->url($all_news->lastPage()) }}">
+										<span class="text">Last <i class="fas fa-chevron-right"></i> </span>
 									</a>
 								@endif
 							</div>

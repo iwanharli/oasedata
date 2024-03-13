@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller {
     public function index() {
-        $all_news = Post::paginate(5);
+        $all_news = Post::orderBy('created_at', 'desc')->paginate(5);
         $random_news = Post::inRandomOrder()->take(5)->get();
         $categories = Category::all();
         $categoriesWithCount = Category::withCount('posts')->orderByDesc('posts_count')->get();
